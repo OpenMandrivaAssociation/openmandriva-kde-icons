@@ -5,7 +5,6 @@ Release:	%mkrel 4
 Epoch: 1
 URL: http://www.mandriva.com
 Group: Graphical desktop/KDE
-BuildRoot: %_tmppath/%name-buildroot
 Source0: %{name}-%{version}.tar.bz2
 License:	GPL
 BuildArch: noarch
