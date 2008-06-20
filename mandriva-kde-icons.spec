@@ -16,14 +16,10 @@ This package contains all specific mandriva icons.
 This include special folders icons and actions icons
 
 %post
-%if %mdkversion > 200600
 %update_icon_cache crystalsvg
-%endif
 
 %postun
-%if %mdkversion > 200600
 %clean_icon_cache crystalsvg
-%endif
 
 
 %files
