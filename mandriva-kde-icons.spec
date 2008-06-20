@@ -15,11 +15,15 @@ Provides:	kde-custom-icons
 This package contains all specific mandriva icons.
 This include special folders icons and actions icons
 
+%if %mdkversion < 200900
 %post
 %update_icon_cache crystalsvg
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_icon_cache crystalsvg
+%endif
 
 
 %files
