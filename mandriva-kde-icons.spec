@@ -1,7 +1,7 @@
 Name: mandriva-kde-icons
 Summary: Mandriva KDE icons
 Version:	1.0.4
-Release:	%mkrel 9
+Release:	%mkrel 10
 Epoch: 1
 URL: http://www.mandriva.com
 Group: Graphical desktop/KDE
