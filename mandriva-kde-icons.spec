@@ -1,23 +1,24 @@
 Name: mandriva-kde-icons
 Summary: Mandriva KDE icons
-Version:	1.0.4
-Release:	%mkrel 11
+Version: 1.0.4
+Release: %mkrel 12
 Epoch: 1
 URL: http://www.mandriva.com
 Group: Graphical desktop/KDE
 BuildRoot: %_tmppath/%name-buildroot
 Source0: %{name}-%{version}.tar.bz2
-License:	GPL
+License: GPL
 BuildArch: noarch
-Provides:	kde-custom-icons
+Provides: kde-custom-icons
 
 %description
 This package contains all specific mandriva icons.
 This include special folders icons and actions icons
 
 %files
-%defattr(0644,root,root,755)
-%_datadir/icons/*
+%defattr(-,root,root)
+%{_iconsdir}/*/*/*/*
+%{_iconsdir}/favicons/*
 
 #--------------------------------------------------------------------
 
@@ -26,12 +27,9 @@ This include special folders icons and actions icons
 
 %install
 rm -rf %buildroot
-install -d -m 0755 %buildroot
-mv * %buildroot
+mkdir -p %buildroot
+cp -fr * %buildroot
+mv -f %buildroot%_iconsdir/crystalsvg %buildroot%_iconsdir/oxygen
 
 %clean
 rm -rf %buildroot
-
-
-
-
