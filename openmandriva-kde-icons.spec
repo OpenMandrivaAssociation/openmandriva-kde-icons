@@ -5,7 +5,7 @@ Release:	15
 Epoch:		1
 URL:		%{disturl}
 Group:		Graphical desktop/KDE
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.xz
 License:	GPL
 BuildArch:	noarch
 Provides:	kde-custom-icons
