@@ -1,7 +1,7 @@
 Name:		openmandriva-kde-icons
 Summary:	OpenMandriva KDE icons
 Version:	1.0.4
-Release:	18
+Release:	19
 Epoch:		1
 URL:		%{disturl}
 Group:		Graphical desktop/KDE
