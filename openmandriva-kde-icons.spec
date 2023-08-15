@@ -12,7 +12,7 @@ Provides:	kde-custom-icons
 %rename		mandriva-kde-icons
 
 %description
-This package contains all specific mandriva icons.
+This package contains all specific openmandriva icons.
 This include special folders icons and actions icons.
 
 %prep
